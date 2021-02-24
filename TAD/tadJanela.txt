@@ -1,0 +1,20 @@
+Janela[J] é um tipo.
+
+FUNCOES -
+nova : Janela[J] construtor que produz instâncias
+
+fechar : Janela[J] -/> Janela[J]
+
+getTamanho : Janela[J] -> tamX[int] tamY[Int]
+
+alterarTamanho : Janela[J] x tamX[int] tamY[Int] -/> Janela[J]
+
+AXIOMAS -
+getTamanho(nova()) = tamX[int] tamY[Int] (uma janela nova sempre será criada com o mesmo tamanho)
+
+getTamanho(alterarTamanho(Janela[J],A,B)) = tamX[A] tamY[B]
+
+PRECONDICOES -
+fechar : requer Janela[J]
+
+alterarTamanho : uma Janela[J] terá dimensões máximas 

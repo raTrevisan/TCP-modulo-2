@@ -1,0 +1,22 @@
+Elevador [E] onde E é um tipo.
+
+FUNCOES -
+novo : Elevador[E] construtor que produz instâncias
+
+abrirPorta : Elevador[E] -> Elevador[E]
+
+fecharporta : Elevador[E] -> Elevador[E]
+
+irParaAndar : Elevador[E] x Andar[Int] -/> Elevador[E]
+
+getAndar : Elevador[E] -> Elevador[E]
+
+emergencia : Elevador[E] -> Elevador[E]
+
+AXIOMAS -
+getAndar(irParaAndar(Elevador[E],x)) = x
+
+getAndar(novo()) = 0
+
+PRÉ-CONDICOES -
+irParaAndar(requer Andar[int] válido)
